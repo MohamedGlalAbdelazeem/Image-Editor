@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Editor 🎨</title>
+    <link rel="stylesheet" type="" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="image">
+            <div class="img-box">
+                <img  id="img">
+            </div>
+            <div class="upload">
+                <label for="upload">Upload</label>
+                <input type="file" id="upload">
+            </div>
+        </div>
+        <div class="filters"> 
+            <ul>
+            <li>
+                <label for="saturate">Saturate</label>
+                <input type="range" id="saturate" min="0" max="200" value="100">
+            </li>
+            </ul>
+            <ul>
+                <li>
+                <label for="contrast">Contrast</label>
+                <input type="range" id="contrast" min="0" max="200" value="100">
+                </li>
+            </ul>
+            <ul>
+                <li>
+                <label for="brightness">Brightnes</label>
+                <input type="range" id="brightness" min="0" max="200" value="100">
+                </li>
+            </ul>
+            <ul>
+                <li>
+                <label for="sepia">Sepia</label>
+                <input type="range" id="sepia" min="0" max="200" value="0">
+                </li>
+            </ul>
+            <ul>
+                <li>
+                <label for="grayscale">Grayscale</label>
+                <input type="range" id="grayscale" step="0.1" min="0" max="1" value="0">
+                </li>
+            </ul>
+            <ul>
+                <li>
+                <label for="blur">Blur</label>
+                <input type="range" id="blur" step="0.1" min="0" max="10" value="0">
+                </li>
+            </ul>
+            <ul>
+                <li>
+                <label for="hue-rotate">Hue Rotate</label>
+                <input type="range" id="hue-rotate" step="0.1" min="0" max="350" value="0">
+              </li>
+            </ul>
+            <ul>
+                <li>
+                  <label for="opacity">Opacity</label>
+                  <input type="range" id="opacity" step="0.01" min="0" max="1" value="1">
+                </li>
+              </ul>
+              <div class="lastelement">
+                <a onclick="downloadImage()" download="true"  id="download">Download</a>
+                <a onclick="deletImage()" download="true"  id="delete">Delete</a>
+                <span id="rest"> Rest</span>
+                </div>
+        </div>
+    </div>
+ 
+
+    <script src="main.js"></script>
+</body>
+</html>
